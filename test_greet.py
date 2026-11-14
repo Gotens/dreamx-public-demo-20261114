@@ -7,6 +7,9 @@ class GreetTests(unittest.TestCase):
     def test_normal_name(self):
         self.assertEqual(greet("Alice"), "Hello, Alice")
 
+    def test_bob(self):
+        self.assertEqual(greet("Bob"), "Hello, Bob")
+
     def test_surrounding_spaces(self):
         self.assertEqual(greet("  Alice  "), "Hello, Alice")
 
